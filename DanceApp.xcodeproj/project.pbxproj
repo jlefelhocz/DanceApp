@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA9009A21DE0E25E0026565A /* MathStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9009A11DE0E25E0026565A /* MathStuff.swift */; };
 		DAB653361DE07272000B482B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB653351DE07272000B482B /* AppDelegate.swift */; };
 		DAB653381DE07272000B482B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB653371DE07272000B482B /* ViewController.swift */; };
 		DAB6533B1DE07272000B482B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB653391DE07272000B482B /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA9009A11DE0E25E0026565A /* MathStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathStuff.swift; sourceTree = "<group>"; };
 		DAB653321DE07272000B482B /* DanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB653351DE07272000B482B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB653371DE07272000B482B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				DAB653391DE07272000B482B /* Main.storyboard */,
 				DAB653681DE07A6D000B482B /* LevelViewController.swift */,
 				DAB6536C1DE0AA6A000B482B /* shapes.swift */,
+				DA9009A11DE0E25E0026565A /* MathStuff.swift */,
 				DAB653661DE077A0000B482B /* LevelCollectionViewCell.swift */,
 				DAB6536A1DE09313000B482B /* GameViewController.swift */,
 				DAB6533F1DE07272000B482B /* Assets.xcassets */,
@@ -281,6 +284,7 @@
 				DAB653691DE07A6D000B482B /* LevelViewController.swift in Sources */,
 				DAB6536D1DE0AA6A000B482B /* shapes.swift in Sources */,
 				DAB653361DE07272000B482B /* AppDelegate.swift in Sources */,
+				DA9009A21DE0E25E0026565A /* MathStuff.swift in Sources */,
 				DAB6533E1DE07272000B482B /* DanceApp.xcdatamodeld in Sources */,
 				DAB6536B1DE09313000B482B /* GameViewController.swift in Sources */,
 				DAB653671DE077A0000B482B /* LevelCollectionViewCell.swift in Sources */,

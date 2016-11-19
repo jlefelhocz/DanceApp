@@ -31,9 +31,12 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
         // get a reference to our storyboard cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! LevelCollectionViewCell
         
+        
+        let swiftColor = UIColor(red: 178/255, green: 102/255, blue: 255/255, alpha: 1)
+        
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
         cell.myLabel.text = self.items[indexPath.item]
-        cell.backgroundColor = UIColor.purple // make cell more visible in our example project
+        cell.backgroundColor = swiftColor // make cell more visible in our example project
         cell.layer.borderColor = UIColor.black.cgColor
         cell.layer.borderWidth = 1
         cell.layer.cornerRadius = 8
