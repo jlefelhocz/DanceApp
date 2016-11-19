@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAB653361DE07272000B482B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB653351DE07272000B482B /* AppDelegate.swift */; };
+		DAB653381DE07272000B482B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB653371DE07272000B482B /* ViewController.swift */; };
+		DAB6533B1DE07272000B482B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB653391DE07272000B482B /* Main.storyboard */; };
+		DAB6533E1DE07272000B482B /* DanceApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DAB6533C1DE07272000B482B /* DanceApp.xcdatamodeld */; };
+		DAB653401DE07272000B482B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB6533F1DE07272000B482B /* Assets.xcassets */; };
+		DAB653431DE07272000B482B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB653411DE07272000B482B /* LaunchScreen.storyboard */; };
+		DAB6534E1DE07272000B482B /* DanceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6534D1DE07272000B482B /* DanceAppTests.swift */; };
+		DAB653591DE07272000B482B /* DanceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB653581DE07272000B482B /* DanceAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAB6534A1DE07272000B482B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB6532A1DE07272000B482B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB653311DE07272000B482B;
+			remoteInfo = DanceApp;
+		};
+		DAB653551DE07272000B482B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAB6532A1DE07272000B482B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAB653311DE07272000B482B;
+			remoteInfo = DanceApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DAB653321DE07272000B482B /* DanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB653351DE07272000B482B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAB653371DE07272000B482B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAB6533A1DE07272000B482B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAB6533D1DE07272000B482B /* DanceApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DanceApp.xcdatamodel; sourceTree = "<group>"; };
+		DAB6533F1DE07272000B482B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAB653421DE07272000B482B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAB653441DE07272000B482B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB653491DE07272000B482B /* DanceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanceAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB6534D1DE07272000B482B /* DanceAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceAppTests.swift; sourceTree = "<group>"; };
+		DAB6534F1DE07272000B482B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB653541DE07272000B482B /* DanceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAB653581DE07272000B482B /* DanceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceAppUITests.swift; sourceTree = "<group>"; };
+		DAB6535A1DE07272000B482B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAB6532F1DE07272000B482B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB653461DE07272000B482B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB653511DE07272000B482B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAB653291DE07272000B482B = {
+			isa = PBXGroup;
+			children = (
+				DAB653341DE07272000B482B /* DanceApp */,
+				DAB6534C1DE07272000B482B /* DanceAppTests */,
+				DAB653571DE07272000B482B /* DanceAppUITests */,
+				DAB653331DE07272000B482B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAB653331DE07272000B482B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAB653321DE07272000B482B /* DanceApp.app */,
+				DAB653491DE07272000B482B /* DanceAppTests.xctest */,
+				DAB653541DE07272000B482B /* DanceAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAB653341DE07272000B482B /* DanceApp */ = {
+			isa = PBXGroup;
+			children = (
+				DAB653351DE07272000B482B /* AppDelegate.swift */,
+				DAB653371DE07272000B482B /* ViewController.swift */,
+				DAB653391DE07272000B482B /* Main.storyboard */,
+				DAB6533F1DE07272000B482B /* Assets.xcassets */,
+				DAB653411DE07272000B482B /* LaunchScreen.storyboard */,
+				DAB653441DE07272000B482B /* Info.plist */,
+				DAB6533C1DE07272000B482B /* DanceApp.xcdatamodeld */,
+			);
+			path = DanceApp;
+			sourceTree = "<group>";
+		};
+		DAB6534C1DE07272000B482B /* DanceAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAB6534D1DE07272000B482B /* DanceAppTests.swift */,
+				DAB6534F1DE07272000B482B /* Info.plist */,
+			);
+			path = DanceAppTests;
+			sourceTree = "<group>";
+		};
+		DAB653571DE07272000B482B /* DanceAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAB653581DE07272000B482B /* DanceAppUITests.swift */,
+				DAB6535A1DE07272000B482B /* Info.plist */,
+			);
+			path = DanceAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAB653311DE07272000B482B /* DanceApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB6535D1DE07272000B482B /* Build configuration list for PBXNativeTarget "DanceApp" */;
+			buildPhases = (
+				DAB6532E1DE07272000B482B /* Sources */,
+				DAB6532F1DE07272000B482B /* Frameworks */,
+				DAB653301DE07272000B482B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DanceApp;
+			productName = DanceApp;
+			productReference = DAB653321DE07272000B482B /* DanceApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAB653481DE07272000B482B /* DanceAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB653601DE07272000B482B /* Build configuration list for PBXNativeTarget "DanceAppTests" */;
+			buildPhases = (
+				DAB653451DE07272000B482B /* Sources */,
+				DAB653461DE07272000B482B /* Frameworks */,
+				DAB653471DE07272000B482B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB6534B1DE07272000B482B /* PBXTargetDependency */,
+			);
+			name = DanceAppTests;
+			productName = DanceAppTests;
+			productReference = DAB653491DE07272000B482B /* DanceAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAB653531DE07272000B482B /* DanceAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAB653631DE07272000B482B /* Build configuration list for PBXNativeTarget "DanceAppUITests" */;
+			buildPhases = (
+				DAB653501DE07272000B482B /* Sources */,
+				DAB653511DE07272000B482B /* Frameworks */,
+				DAB653521DE07272000B482B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAB653561DE07272000B482B /* PBXTargetDependency */,
+			);
+			name = DanceAppUITests;
+			productName = DanceAppUITests;
+			productReference = DAB653541DE07272000B482B /* DanceAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAB6532A1DE07272000B482B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = JulianneLefelhocz;
+				TargetAttributes = {
+					DAB653311DE07272000B482B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8754G88NFP;
+						ProvisioningStyle = Automatic;
+					};
+					DAB653481DE07272000B482B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8754G88NFP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAB653311DE07272000B482B;
+					};
+					DAB653531DE07272000B482B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8754G88NFP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DAB653311DE07272000B482B;
+					};
+				};
+			};
+			buildConfigurationList = DAB6532D1DE07272000B482B /* Build configuration list for PBXProject "DanceApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAB653291DE07272000B482B;
+			productRefGroup = DAB653331DE07272000B482B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAB653311DE07272000B482B /* DanceApp */,
+				DAB653481DE07272000B482B /* DanceAppTests */,
+				DAB653531DE07272000B482B /* DanceAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAB653301DE07272000B482B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB653431DE07272000B482B /* LaunchScreen.storyboard in Resources */,
+				DAB653401DE07272000B482B /* Assets.xcassets in Resources */,
+				DAB6533B1DE07272000B482B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB653471DE07272000B482B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB653521DE07272000B482B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAB6532E1DE07272000B482B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB653381DE07272000B482B /* ViewController.swift in Sources */,
+				DAB653361DE07272000B482B /* AppDelegate.swift in Sources */,
+				DAB6533E1DE07272000B482B /* DanceApp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB653451DE07272000B482B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB6534E1DE07272000B482B /* DanceAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAB653501DE07272000B482B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAB653591DE07272000B482B /* DanceAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAB6534B1DE07272000B482B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB653311DE07272000B482B /* DanceApp */;
+			targetProxy = DAB6534A1DE07272000B482B /* PBXContainerItemProxy */;
+		};
+		DAB653561DE07272000B482B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAB653311DE07272000B482B /* DanceApp */;
+			targetProxy = DAB653551DE07272000B482B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAB653391DE07272000B482B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB6533A1DE07272000B482B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAB653411DE07272000B482B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAB653421DE07272000B482B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAB6535B1DE07272000B482B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAB6535C1DE07272000B482B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAB6535E1DE07272000B482B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8754G88NFP;
+				INFOPLIST_FILE = DanceApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JulianneLefelhocz.DanceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DAB6535F1DE07272000B482B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8754G88NFP;
+				INFOPLIST_FILE = DanceApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JulianneLefelhocz.DanceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DAB653611DE07272000B482B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8754G88NFP;
+				INFOPLIST_FILE = DanceAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JulianneLefelhocz.DanceAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanceApp.app/DanceApp";
+			};
+			name = Debug;
+		};
+		DAB653621DE07272000B482B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8754G88NFP;
+				INFOPLIST_FILE = DanceAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JulianneLefelhocz.DanceAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DanceApp.app/DanceApp";
+			};
+			name = Release;
+		};
+		DAB653641DE07272000B482B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8754G88NFP;
+				INFOPLIST_FILE = DanceAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JulianneLefelhocz.DanceAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DanceApp;
+			};
+			name = Debug;
+		};
+		DAB653651DE07272000B482B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8754G88NFP;
+				INFOPLIST_FILE = DanceAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JulianneLefelhocz.DanceAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DanceApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAB6532D1DE07272000B482B /* Build configuration list for PBXProject "DanceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB6535B1DE07272000B482B /* Debug */,
+				DAB6535C1DE07272000B482B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAB6535D1DE07272000B482B /* Build configuration list for PBXNativeTarget "DanceApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB6535E1DE07272000B482B /* Debug */,
+				DAB6535F1DE07272000B482B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAB653601DE07272000B482B /* Build configuration list for PBXNativeTarget "DanceAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB653611DE07272000B482B /* Debug */,
+				DAB653621DE07272000B482B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DAB653631DE07272000B482B /* Build configuration list for PBXNativeTarget "DanceAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAB653641DE07272000B482B /* Debug */,
+				DAB653651DE07272000B482B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DAB6533C1DE07272000B482B /* DanceApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DAB6533D1DE07272000B482B /* DanceApp.xcdatamodel */,
+			);
+			currentVersion = DAB6533D1DE07272000B482B /* DanceApp.xcdatamodel */;
+			path = DanceApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DAB6532A1DE07272000B482B /* Project object */;
+}
