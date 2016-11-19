@@ -9,7 +9,7 @@
 
 import UIKit
 
-    var level = 0
+var level = -1
 
 class LevelViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -42,12 +42,19 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     }
     
+    func collectionView(_ collectionView: UICollectionView,
+                        didHighlightItemAt indexPath: IndexPath){
+        level = indexPath.item
+        
+    }
+    
     // MARK: - UICollectionViewDelegate protocol
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // handle tap events
         print("You selected cell #\(indexPath.item)!")
-        level = indexPath.item
+       
+        
     }
     
 }

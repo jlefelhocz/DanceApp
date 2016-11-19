@@ -10,14 +10,20 @@ import Foundation
 import UIKit
 import SpriteKit
 
+
+
 class GameViewController: UIViewController {
     
     @IBOutlet weak var levelNum: UILabel!
     
+
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        levelNum.text = "\(level)"
+       levelNum.text = "\(level)"
+       
     }
-
+    
+   
 }
