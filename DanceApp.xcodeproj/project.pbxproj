@@ -15,6 +15,9 @@
 		DAB653431DE07272000B482B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB653411DE07272000B482B /* LaunchScreen.storyboard */; };
 		DAB6534E1DE07272000B482B /* DanceAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6534D1DE07272000B482B /* DanceAppTests.swift */; };
 		DAB653591DE07272000B482B /* DanceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB653581DE07272000B482B /* DanceAppUITests.swift */; };
+		DAB653671DE077A0000B482B /* LevelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB653661DE077A0000B482B /* LevelCollectionViewCell.swift */; };
+		DAB653691DE07A6D000B482B /* LevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB653681DE07A6D000B482B /* LevelViewController.swift */; };
+		DAB6536B1DE09313000B482B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6536A1DE09313000B482B /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		DAB653541DE07272000B482B /* DanceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DanceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB653581DE07272000B482B /* DanceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DanceAppUITests.swift; sourceTree = "<group>"; };
 		DAB6535A1DE07272000B482B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB653661DE077A0000B482B /* LevelCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelCollectionViewCell.swift; sourceTree = "<group>"; };
+		DAB653681DE07A6D000B482B /* LevelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelViewController.swift; sourceTree = "<group>"; };
+		DAB6536A1DE09313000B482B /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				DAB653351DE07272000B482B /* AppDelegate.swift */,
 				DAB653371DE07272000B482B /* ViewController.swift */,
 				DAB653391DE07272000B482B /* Main.storyboard */,
+				DAB653681DE07A6D000B482B /* LevelViewController.swift */,
+				DAB653661DE077A0000B482B /* LevelCollectionViewCell.swift */,
+				DAB6536A1DE09313000B482B /* GameViewController.swift */,
 				DAB6533F1DE07272000B482B /* Assets.xcassets */,
 				DAB653411DE07272000B482B /* LaunchScreen.storyboard */,
 				DAB653441DE07272000B482B /* Info.plist */,
@@ -266,8 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAB653381DE07272000B482B /* ViewController.swift in Sources */,
+				DAB653691DE07A6D000B482B /* LevelViewController.swift in Sources */,
 				DAB653361DE07272000B482B /* AppDelegate.swift in Sources */,
 				DAB6533E1DE07272000B482B /* DanceApp.xcdatamodeld in Sources */,
+				DAB6536B1DE09313000B482B /* GameViewController.swift in Sources */,
+				DAB653671DE077A0000B482B /* LevelCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
