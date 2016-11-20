@@ -54,7 +54,7 @@ public class point {
     }
     
     func checkHit(realPoint: point) {
-        if (self.getDistance(Point: getLocation()) < 0.06) {
+        if (self.getDistance(Point: phoneLocation) < 0.06) {
             self.hasBeenHit = true
         }
     }

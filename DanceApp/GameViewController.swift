@@ -11,27 +11,34 @@ import UIKit
 import SpriteKit
 
 
-var testshape = shape(points: [point(x: 0, y: 0), point(x: 100, y:300), point(x: 330, y: 500), point(x:100, y:400)])
-var activeShape = shapes[level]
-
+var testShape = shape(points: [point(x: 100, y: 100), point(x: 200, y:300), point(x: 330, y: 500), point(x:100, y:400)])
+var activeShape = testShape;//shapes[level]
 
 class GameViewController: UIViewController {
     
     @IBOutlet weak var levelNum: UILabel!
     
     @IBOutlet var drawingSpace: UIView!
-
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         levelNum.text = "\(level)"
         //testshape.drawlines(rect: CGRect(x: 0, y: 0, width: 100, height: 100));
-        setShapes()
-       
+        
+        var timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true);
+        
+        startTracking()
+        
+    }
+    func update() {
+        print("test")
+        
+        updateLocation()
     }
     
-   
+    
 }
 
 class DrawUIView: UIView {
@@ -57,6 +64,7 @@ class DrawUIView: UIView {
         if (activeShape.nextPoint == activeShape.lastPoint) {
             level += 1
         }
-
+        
     }
 }
+    
