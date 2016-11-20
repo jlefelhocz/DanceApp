@@ -32,7 +32,7 @@ class LevelViewController: UIViewController, UICollectionViewDataSource, UIColle
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath as IndexPath) as! LevelCollectionViewCell
         
         
-        let swiftColor = UIColor(red: 178/255, green: 102/255, blue: 255/255, alpha: 1)
+        let swiftColor = UIColor(red: 30/255, green: 225/255, blue: 255/255, alpha: 1)
         
         // Use the outlet in our custom class to get a reference to the UILabel in the cell
         cell.myLabel.text = self.items[indexPath.item]

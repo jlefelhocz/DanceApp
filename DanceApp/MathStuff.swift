@@ -30,7 +30,6 @@ func startTracking() {
 
 func stopTracking() {
     activelyTracking = false;
-    
 }
 
 func updateLocation() {
@@ -38,11 +37,56 @@ func updateLocation() {
     if(activelyTracking == true) {
         if let accelerometerData = motionManager.accelerometerData {
             let dt = (NSDate()).timeIntervalSince1970 - lastTime;
-            velX += accelerometerData.acceleration.x * dt;
-            velY += accelerometerData.acceleration.y * dt;
+            
+            velX += accelerometerData.acceleration.x * dt * 500;
+            velY -= accelerometerData.acceleration.y * dt * 500;
+            
+            
             phoneLocation = point(x: phoneLocation.x + velX * dt, y: phoneLocation.y + velY * dt)
-            print("accX :: \(accelerometerData.acceleration.x)")
-            print("accY :: \(accelerometerData.acceleration.y)")
+            
+            
+            let maxPosX: Double = 320
+            let maxPosY: Double = 540
+            var xVal = phoneLocation.x
+            var yVal = phoneLocation.y
+            if(xVal > maxPosX) {
+                xVal = maxPosX
+                velX = 0
+            }
+            if(xVal < 0) {
+                xVal = 0
+                velX = 0
+            }
+            if(yVal > maxPosY) {
+                yVal = maxPosY
+                velY = 0
+            }
+            if(yVal < 0) {
+                yVal = 0;
+                velY = 0
+            }
+            phoneLocation = point(x: xVal, y: yVal)
+            
+            
+            let maxVel: Double = 50
+            xVal = velX
+            yVal = velY
+            if(abs(xVal) > maxVel) {
+                xVal = xVal / abs(xVal) * maxVel
+            }
+            if(abs(yVal) > maxVel) {
+                yVal = yVal / abs(yVal) * maxVel
+            }
+            velX = xVal
+            velY = yVal
+            
+            
+            
+            lastTime = (NSDate()).timeIntervalSince1970
+            
+            
+            print("accX :: \(accelerometerData.acceleration.x * 9.8)")
+            print("accY :: \(accelerometerData.acceleration.y * 9.8)")
             print("velX :: \(velX)")
             print("velY :: \(velY)")
             print("posX :: \(phoneLocation.x)")

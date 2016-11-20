@@ -30,18 +30,18 @@ public class shape {
         if(points[nextPoint].hasBeenHit) {
             nextPoint += 1;
         }
-        /*for point in points {
-         if(point.hasBeenHit == true) {
-         nextPoint += 1
-         }
-         }*/
     }
     
     init(points: [point]) {
         self.points = points
     }
-
-        
+    
+    init(pointsA: [[Double]]) {
+        for i in 0...(pointsA.count-1) {
+            points.append(point(x: pointsA[i][0], y: pointsA[i][1]))
+        }
+    }
+    
 }
 
 public class point {

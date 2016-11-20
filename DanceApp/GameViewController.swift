@@ -24,28 +24,34 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        levelNum.text = "\(level)"
-        //testshape.drawlines(rect: CGRect(x: 0, y: 0, width: 100, height: 100));
+    
         
-        var timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true);
+        
+        levelNum.text = "\(level)"
+    
+        _ = Timer.scheduledTimer(timeInterval: 0.015, target: self, selector: #selector(self.update), userInfo: nil, repeats: true);
         
         startTracking()
         
     }
+    
     func update() {
         print("test")
         
         updateLocation()
+        drawingSpace.setNeedsDisplay()
     }
-    
     
 }
 
 class DrawUIView: UIView {
+    
     override func draw(_ rect: CGRect) {
         
         let aPath = UIBezierPath()
         
+    
+        activeShape = shapes[0]
         
         let num: Int = activeShape.points.count-2
         for i in 0...num {
@@ -60,10 +66,26 @@ class DrawUIView: UIView {
         aPath.close()
         UIColor.white.set()
         aPath.stroke()
+        aPath.lineWidth = 1.0
         
         if (activeShape.nextPoint == activeShape.lastPoint) {
             level += 1
         }
+        
+        let circlePath = UIBezierPath(arcCenter: CGPoint(x: phoneLocation.x, y: phoneLocation.y), radius: CGFloat(20), startAngle: CGFloat(0), endAngle:CGFloat(M_PI * 2), clockwise: true)
+        
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = circlePath.cgPath
+        
+        //change the fill color
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        //you can change the stroke color
+        shapeLayer.strokeColor = UIColor.red.cgColor
+        //you can change the line width
+        shapeLayer.lineWidth = 3.0
+        circlePath.stroke()
+        circlePath.fill()
+//        view.layer.addSublayer(shapeLayer)
         
     }
 }
