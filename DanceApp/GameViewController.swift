@@ -11,7 +11,8 @@ import UIKit
 import SpriteKit
 
 
-var testshape = shape(points: [point(x: 0, y: 0), point(x: 100, y:0), point(x: 100, y: 100), point(x:0, y:0)], nextPoint: 0, lastPoint: 3)
+var testshape = shape(points: [point(x: 0, y: 0), point(x: 100, y:300), point(x: 330, y: 500), point(x:100, y:400)])
+var activeShape = shapes[level]
 
 
 class GameViewController: UIViewController {
@@ -26,7 +27,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         levelNum.text = "\(level)"
         //testshape.drawlines(rect: CGRect(x: 0, y: 0, width: 100, height: 100));
-        
+        setShapes()
        
     }
     
@@ -38,19 +39,24 @@ class DrawUIView: UIView {
         
         let aPath = UIBezierPath()
         
-        let num: Int = testshape.points.count-2
+        
+        let num: Int = activeShape.points.count-2
         for i in 0...num {
             
             let j = i+1
             
-            aPath.move(to: CGPoint(x: testshape.points[i].x, y: testshape.points[i].y))
+            aPath.move(to: CGPoint(x: activeShape.points[i].x, y: activeShape.points[i].y))
             
-            aPath.addLine(to: CGPoint(x: testshape.points[j].x, y: testshape.points[j].y))
+            aPath.addLine(to: CGPoint(x: activeShape.points[j].x, y: activeShape.points[j].y))
             
         }
         aPath.close()
         UIColor.white.set()
         aPath.stroke()
+        
+        if (activeShape.nextPoint == activeShape.lastPoint) {
+            level += 1
+        }
 
     }
 }

@@ -37,10 +37,8 @@ public class shape {
          }*/
     }
     
-    init(points: [point], nextPoint: Int, lastPoint: Int) {
+    init(points: [point]) {
         self.points = points
-        self.nextPoint = nextPoint
-        self.lastPoint = lastPoint
     }
 
         
