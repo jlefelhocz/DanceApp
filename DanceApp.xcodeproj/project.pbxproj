@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA9009A21DE0E25E0026565A /* MathStuff.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9009A11DE0E25E0026565A /* MathStuff.swift */; };
+		DAA446421DE128DE00E09AEA /* ShapeArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA446411DE128DE00E09AEA /* ShapeArray.swift */; };
 		DAB653361DE07272000B482B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB653351DE07272000B482B /* AppDelegate.swift */; };
 		DAB653381DE07272000B482B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB653371DE07272000B482B /* ViewController.swift */; };
 		DAB6533B1DE07272000B482B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB653391DE07272000B482B /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		DA9009A11DE0E25E0026565A /* MathStuff.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MathStuff.swift; sourceTree = "<group>"; };
+		DAA446411DE128DE00E09AEA /* ShapeArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeArray.swift; sourceTree = "<group>"; };
 		DAB653321DE07272000B482B /* DanceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DanceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB653351DE07272000B482B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAB653371DE07272000B482B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DAA446401DE1286F00E09AEA /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAB653371DE07272000B482B /* ViewController.swift */,
+				DAB653681DE07A6D000B482B /* LevelViewController.swift */,
+				DAB653661DE077A0000B482B /* LevelCollectionViewCell.swift */,
+				DAB6536A1DE09313000B482B /* GameViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		DAB653291DE07272000B482B = {
 			isa = PBXGroup;
 			children = (
@@ -110,13 +123,11 @@
 			isa = PBXGroup;
 			children = (
 				DAB653351DE07272000B482B /* AppDelegate.swift */,
-				DAB653371DE07272000B482B /* ViewController.swift */,
 				DAB653391DE07272000B482B /* Main.storyboard */,
-				DAB653681DE07A6D000B482B /* LevelViewController.swift */,
-				DAB6536C1DE0AA6A000B482B /* shapes.swift */,
+				DAA446401DE1286F00E09AEA /* ViewControllers */,
 				DA9009A11DE0E25E0026565A /* MathStuff.swift */,
-				DAB653661DE077A0000B482B /* LevelCollectionViewCell.swift */,
-				DAB6536A1DE09313000B482B /* GameViewController.swift */,
+				DAB6536C1DE0AA6A000B482B /* shapes.swift */,
+				DAA446411DE128DE00E09AEA /* ShapeArray.swift */,
 				DAB6533F1DE07272000B482B /* Assets.xcassets */,
 				DAB653411DE07272000B482B /* LaunchScreen.storyboard */,
 				DAB653441DE07272000B482B /* Info.plist */,
@@ -282,6 +293,7 @@
 			files = (
 				DAB653381DE07272000B482B /* ViewController.swift in Sources */,
 				DAB653691DE07A6D000B482B /* LevelViewController.swift in Sources */,
+				DAA446421DE128DE00E09AEA /* ShapeArray.swift in Sources */,
 				DAB6536D1DE0AA6A000B482B /* shapes.swift in Sources */,
 				DAB653361DE07272000B482B /* AppDelegate.swift in Sources */,
 				DA9009A21DE0E25E0026565A /* MathStuff.swift in Sources */,

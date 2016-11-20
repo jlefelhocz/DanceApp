@@ -9,6 +9,6 @@
 import Foundation
 
 func getLocation() -> point {
-        let practice = point()
+    let practice = point(x: 1, y: 1)
         return practice
 }

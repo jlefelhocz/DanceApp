@@ -11,6 +11,7 @@ import UIKit
 
 
 
+
 public class shape {
     
     var points: [point] = []
@@ -24,30 +25,44 @@ public class shape {
         nextPoint = 0
     }
     
-   
-    
-    func getNext() {
-        
+    func getNext(realPoint: point) {
+        points[nextPoint].checkHit(realPoint: realPoint);
+        if(points[nextPoint].hasBeenHit) {
+            nextPoint += 1;
+        }
+        /*for point in points {
+         if(point.hasBeenHit == true) {
+         nextPoint += 1
+         }
+         }*/
     }
     
-    
+    init(points: [point], nextPoint: Int, lastPoint: Int) {
+        self.points = points
+        self.nextPoint = nextPoint
+        self.lastPoint = lastPoint
+    }
+
+        
 }
 
 public class point {
     var x: Double = 0.0
     var y: Double = 0.0
     var hasBeenHit = false
-
+    
     func getDistance(Point: point) -> Double {
         return sqrt(pow((self.x-Point.x),2)+pow((self.y-Point.y),2))
     }
     
-    func checkHit(realPoint: point) -> Bool {
-        if (self.getDistance(Point: getLocation()) < 0.1) {
-            return true
+    func checkHit(realPoint: point) {
+        if (self.getDistance(Point: getLocation()) < 0.06) {
+            self.hasBeenHit = true
         }
-        
-        return false
+    }
+    init(x: Double, y: Double) {
+        self.x = x
+        self.y = y
     }
     
 }
