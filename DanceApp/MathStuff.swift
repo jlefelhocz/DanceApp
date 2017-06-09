@@ -11,7 +11,7 @@ import CoreMotion
 
 
 var activelyTracking: Bool = false;
-var phoneLocation: point = point(x: 0,y: 0)
+var phoneLocation: Point = Point(x: 0,y: 0)
 var velX: Double = 0
 var velY: Double = 0
 var motionManager: CMMotionManager!
@@ -20,7 +20,7 @@ var lastTime = (NSDate()).timeIntervalSince1970
 
 func startTracking() {
     activelyTracking = true;
-    phoneLocation = point(x: 0,y: 0);
+    phoneLocation = Point(x: 0,y: 0);
     velX = 0
     velY = 0
     motionManager = CMMotionManager()
@@ -42,7 +42,7 @@ func updateLocation() {
             velY -= accelerometerData.acceleration.y * dt * 500;
             
             
-            phoneLocation = point(x: phoneLocation.x + velX * dt, y: phoneLocation.y + velY * dt)
+            phoneLocation = Point(x: phoneLocation.x + velX * dt, y: phoneLocation.y + velY * dt)
             
             
             let maxPosX: Double = 320
@@ -65,7 +65,7 @@ func updateLocation() {
                 yVal = 0;
                 velY = 0
             }
-            phoneLocation = point(x: xVal, y: yVal)
+            phoneLocation = Point(x: xVal, y: yVal)
             
             
             let maxVel: Double = 50

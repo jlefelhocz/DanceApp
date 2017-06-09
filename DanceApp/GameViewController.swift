@@ -11,7 +11,7 @@ import UIKit
 import SpriteKit
 
 
-var testShape = shape(points: [point(x: 100, y: 100), point(x: 200, y:300), point(x: 330, y: 500), point(x:100, y:400)])
+var testShape = shape(points: [Point(x: 100, y: 100), Point(x: 200, y:300), Point(x: 330, y: 500), Point(x:100, y:400)])
 var activeShape = testShape;//shapes[level]
 
 class GameViewController: UIViewController {
