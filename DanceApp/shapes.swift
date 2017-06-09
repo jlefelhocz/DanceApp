@@ -13,10 +13,12 @@ import UIKit
 
 
 public class shape {
+
     
     var points: [point] = []
     var nextPoint: Int = 0
     var lastPoint: Int = 0
+    var currentPoint: point;
     
     func reset() {
         for point in points {
@@ -32,17 +34,28 @@ public class shape {
         }
     }
     
+    func compShape() {
+        
+    }
+   
+    
     init(points: [point]) {
         self.points = points
+        currentPoint = points[0]
     }
     
     init(pointsA: [[Double]]) {
         for i in 0...(pointsA.count-1) {
             points.append(point(x: pointsA[i][0], y: pointsA[i][1]))
         }
+        lastPoint = points.count-1
+        currentPoint = points[0]
     }
     
+    
+    
 }
+
 
 public class point {
     var x: Double = 0.0
@@ -54,7 +67,8 @@ public class point {
     }
     
     func checkHit(realPoint: point) {
-        if (self.getDistance(Point: phoneLocation) < 0.06) {
+        if (self.getDistance(Point: phoneLocation) < 50) {
+            print("Congrats!")
             self.hasBeenHit = true
         }
     }
