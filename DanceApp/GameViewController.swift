@@ -24,18 +24,18 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         
         
         levelNum.text = "\(level)"
-    
+        
         _ = Timer.scheduledTimer(timeInterval: 0.015, target: self, selector: #selector(self.update), userInfo: nil, repeats: true);
         
         startTracking()
         
     }
     
-    func update() {
+    @objc func update() {
         print("test")
         
         updateLocation()
@@ -50,7 +50,7 @@ class DrawUIView: UIView {
         
         let aPath = UIBezierPath()
         
-    
+        
         activeShape = shapes[0]
         
         let num: Int = activeShape.points.count-2
@@ -72,7 +72,7 @@ class DrawUIView: UIView {
             level += 1
         }
         
-        let circlePath = UIBezierPath(arcCenter: CGPoint(x: phoneLocation.x, y: phoneLocation.y), radius: CGFloat(20), startAngle: CGFloat(0), endAngle:CGFloat(M_PI * 2), clockwise: true)
+        let circlePath = UIBezierPath(arcCenter: CGPoint(x: phoneLocation.x, y: phoneLocation.y), radius: CGFloat(20), startAngle: CGFloat(0), endAngle:CGFloat(Double.pi * 2), clockwise: true)
         
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = circlePath.cgPath
@@ -89,4 +89,4 @@ class DrawUIView: UIView {
         
     }
 }
-    
+
