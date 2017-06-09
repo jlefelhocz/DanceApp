@@ -11,7 +11,7 @@ import UIKit
 
 
 
-
+/*
 public class shape {
     
     var points: [point] = []
@@ -43,17 +43,35 @@ public class shape {
     }
     
 }
+ */
 
-public class point {
+public class Path {
+    
+    init() {
+        addPoints(numberOfPoints: 10)
+    }
+    
+    var points : [Path] = []
+    
+    func addPoints(numberOfPoints: Int) {
+        for var i in 0...(numberOfPoints - 1) {
+            var newX =
+            var newY = Point(points.last)
+//            points.append(newElement: )
+        }
+    }
+}
+
+public class Point {
     var x: Double = 0.0
     var y: Double = 0.0
     var hasBeenHit = false
     
-    func getDistance(Point: point) -> Double {
+    func getDistance(Point: Point) -> Double {
         return sqrt(pow((self.x-Point.x),2)+pow((self.y-Point.y),2))
     }
     
-    func checkHit(realPoint: point) {
+    func checkHit(realPoint: Point) {
         if (self.getDistance(Point: phoneLocation) < 0.06) {
             self.hasBeenHit = true
         }
